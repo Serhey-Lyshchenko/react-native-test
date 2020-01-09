@@ -1,0 +1,33 @@
+<svg width="577.324" height="577.324" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <g id="svg_2">
+    <path id="svg_4" fill="red" d="m288.662,0c-159.169,0 -288.662,129.493 -288.662,288.662s129.493,288.662 288.662,288.662s288.662,-129.493 288.662,-288.662s-129.493,-288.662 -288.662,-288.662zm0,485.524c-108.55,0 -196.862,-88.312 -196.862,-196.862c0,-108.55 88.312,-196.862 196.862,-196.862c108.551,0 196.862,88.312 196.862,196.862c0,108.551 -88.311,196.862 -196.862,196.862z"/>
+   </g>
+  </g>
+  <g id="svg_5"/>
+  <g id="svg_6"/>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+  <g id="svg_17"/>
+  <g id="svg_18"/>
+  <g id="svg_19"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="331.099503" x2="216.161987" y1="192.099503" x1="333.161987" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <rect stroke="null" transform="rotate(45 288.1619873046875,286.59948730468744) " rx="20" id="svg_27" height="88.999996" width="336.710636" y="242.099503" x="119.806677" fill-opacity="null" stroke-opacity="null" stroke-width="NaN" fill="red"/>
+  <rect stroke="null" transform="rotate(-45 289.1619873046874,290.59948730468744) " rx="20" id="svg_28" height="88.999996" width="336.710636" y="246.099503" x="120.806677" fill-opacity="null" stroke-opacity="null" stroke-width="NaN" fill="red"/>
+ </g>
+</svg>

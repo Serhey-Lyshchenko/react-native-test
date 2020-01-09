@@ -1,0 +1,4 @@
+#Wed Jan 08 20:07:17 EET 2020
+base.0=/home/user/Projects/test/rn-test/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

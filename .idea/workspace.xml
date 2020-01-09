@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8613612-bc84-4334-b0b5-e71c24b1121c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AnalyticsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AnalyticsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AuthService.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="264" />
+    <option name="y" value="-4" />
+    <option name="width" value="1400" />
+    <option name="height" value="1028" />
+  </component>
+  <component name="ProjectId" id="1VLdbczgX8vko2wQhzBCWdfuynS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8613612-bc84-4334-b0b5-e71c24b1121c" name="Default Changelist" comment="" />
+      <created>1577034699906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577034699906</updated>
+      <workItem from="1577036383487" duration="7568000" />
+      <workItem from="1577044671681" duration="6526000" />
+      <workItem from="1577355091842" duration="3777000" />
+      <workItem from="1577361907633" duration="5507000" />
+      <workItem from="1578038871762" duration="1494000" />
+      <workItem from="1578040384000" duration="2702000" />
+      <workItem from="1578043350982" duration="75363000" />
+      <workItem from="1578324494271" duration="9168000" />
+      <workItem from="1578480767041" duration="27694000" />
+      <workItem from="1578559914850" duration="4291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="553" y="163" width="804" height="675" key="#JavaScript" timestamp="1577044919401">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="553" y="163" width="804" height="675" key="#JavaScript/0.0.1920.1080@0.0.1920.1080" timestamp="1577044919401" />
+    <state x="739" y="234" width="428" height="482" key="FileChooserDialogImpl" timestamp="1577044668065">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="234" width="428" height="482" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577044668065" />
+    <state x="460" y="111" key="SettingsEditor" timestamp="1577037862089">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="460" y="111" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577037862089" />
+    <state x="2489" y="24" width="687" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578482766920">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="599" y="-40" width="687" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578323860248" />
+    <state x="618" y="121" width="666" height="656" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577046469605" />
+    <state x="1232" y="69" width="687" height="770" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.3840.1080@0.0.3840.1080" timestamp="1577092792073" />
+    <state x="2489" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.24.1920.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578482766920" />
+    <state x="569" y="-430" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578336005058" />
+    <state x="2497" y="-326" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578327775229" />
+    <state x="2848" y="272" width="992" height="530" key="find.popup" timestamp="1578563640456">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1299" y="272" width="621" height="512" key="find.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578311855590" />
+    <state x="2848" y="272" width="992" height="530" key="find.popup/0.24.1920.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578563640456" />
+    <state x="3192" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1578325146881">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1272" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578272792894" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1577361647239" />
+    <state x="3192" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578325146881" />
+  </component>
+</project>
