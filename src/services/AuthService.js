@@ -68,6 +68,16 @@ class AuthService {
     return await this.loginUser(result.accessToken);
   }
 
+  async loginWithLinkedIn() {
+    const result = await this.auth0.webAuth.authorize({
+      connection: 'linkedin',
+    });
+
+    await AsyncStorage.setItem('accessToken', result.accessToken);
+
+    return await this.loginUser(result.accessToken);
+  }
+
   async logout() {
     await AsyncStorage.removeItem('accessToken');
     authStore.clearUser();

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, StyleSheet, Dimensions, Text, Image} from 'react-native';
+import {View, StyleSheet, Dimensions, Text, Image, TouchableOpacity} from 'react-native';
 import {Button} from 'react-native-elements';
 import {TabView, SceneMap} from 'react-native-tab-view';
 import Circles from '../components/Circles';
@@ -14,47 +14,15 @@ const initialRoutes = [
   { key: '2', title: 'Third' },
 ];
 
-@inject('analyticsService')
-@observer
 class Tab extends React.Component {
   render() {
-    const {text, ...props} = this.props;
+    const {text} = this.props;
 
     return (
-      <View style={styles.scene}>
-        <View style={styles.topSide}>
-          <Image
-            style={styles.logo}
-            source={require('../assets/big-logo.png')}
-          />
-        </View>
-        <View style={styles.bottomSide}>
-          <Text style={styles.text}>{text}</Text>
-          <Circles routes={initialRoutes} active={props.route.key} />
-          <Button
-            title="get started"
-            buttonStyle={styles.button}
-            titleStyle={styles.buttonTitle}
-            onPress={this.getStarted}
-          />
-          <View style={{flexDirection: 'row'}}>
-            <Text style={styles.text}>Already a member?</Text>
-            <Button
-              title="Log in"
-              type="clear"
-              titleStyle={{color: 'white', fontSize: 14, fontWeight: 'bold'}}
-              buttonStyle={{height: 20, padding: 0, paddingLeft: 5, margin: 0}}
-            />
-          </View>
-        </View>
+      <View style={styles.textContainer}>
+        <Text style={styles.text}>{text}</Text>
       </View>
     );
-  }
-
-  getStarted = () => {
-    this.props.analyticsService.stopTracking(this.props.route.key);
-    this.props.analyticsService.logSplashEvent();
-    this.props.navigation.navigate('Register');
   }
 }
 
@@ -68,12 +36,10 @@ export default class SplashScreen extends React.Component {
   routes = initialRoutes;
 
   render() {
-    const {navigation} = this.props;
-
     const renderScene = SceneMap(
       this.props.analyticsService.phrases.map(text =>
         (props) =>
-          <Tab {...props} navigation={navigation} text={text} />
+          <Tab text={text} />
       )
     );
 
@@ -90,6 +56,32 @@ export default class SplashScreen extends React.Component {
           rate={1.0}
           ignoreSilentSwitch={"obey"}
         />
+        <View style={styles.scene}>
+          <View style={styles.topSide}>
+            <Image
+              style={styles.logo}
+              source={require('../assets/big-logo.png')}
+            />
+          </View>
+          <View style={styles.bottomSide}>
+            <Circles routes={initialRoutes} active={this.index} />
+            <Button
+              title="get started"
+              buttonStyle={styles.button}
+              titleStyle={styles.buttonTitle}
+              onPress={this.getStarted}
+            />
+            <View style={{flexDirection: 'row'}}>
+              <Text style={styles.text}>Already a member?</Text>
+              <Button
+                title="Log in"
+                type="clear"
+                titleStyle={{color: 'white', fontSize: 14, fontWeight: 'bold'}}
+                buttonStyle={{height: 20, padding: 0, paddingLeft: 5, margin: 0}}
+              />
+            </View>
+          </View>
+        </View>
         <TabView
           renderTabBar={() => null}
           navigationState={{index: this.index, routes: this.routes}}
@@ -100,6 +92,12 @@ export default class SplashScreen extends React.Component {
       </View>
     );
   }
+
+  getStarted = () => {
+    this.props.analyticsService.stopTracking(this.index);
+    this.props.analyticsService.logSplashEvent();
+    this.props.navigation.navigate('Register');
+  };
 
   switchTab = (i) => {
     this.props.analyticsService.stopTracking(this.index);
@@ -113,8 +111,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#00003f',
   },
   scene: {
-    flex: 1,
+    zIndex:1000,
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
     backgroundColor: 'transparent',
+  },
+  textContainer: {
+    flex: 1,
+    paddingTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   text: {
     color: 'white',

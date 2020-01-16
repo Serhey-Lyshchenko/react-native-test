@@ -6,7 +6,7 @@ const Circles = ({routes, active}) => (
     {routes.map(({key}) => (
       <View
         key={key}
-        style={active === key ? [styles.circle, styles.active] : styles.circle}
+        style={String(active) === String(key) ? [styles.circle, styles.active] : styles.circle}
       />
     ))}
   </View>

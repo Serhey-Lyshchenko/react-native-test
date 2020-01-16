@@ -15,6 +15,7 @@ import Eye from '../components/icons/Eye';
 import Circle from '../components/icons/Circle';
 import {Button} from 'react-native-elements';
 import Google from '../components/icons/Google';
+import LinkedIn from '../components/icons/LinkedIn';
 
 @inject('authStore')
 @inject('authService')
@@ -77,6 +78,8 @@ class Screen extends React.Component {
               <TextInput
                 style={styles.input}
                 value={this.form.email}
+                keyboardType="email-address"
+                autoCapitalize="none"
                 onChangeText={text => this.handleChange('email', text)}
               />
               {this.validation.email && (
@@ -114,7 +117,7 @@ class Screen extends React.Component {
           </View>
           <Button
             disabled={!this.allowToRegister}
-            onPress={() => this.register(false)}
+            onPress={() => this.register()}
             title="create profile*"
             disabledStyle={styles.button}
             buttonStyle={styles.button}
@@ -126,11 +129,19 @@ class Screen extends React.Component {
         </View>
         <View style={styles.form}>
           <Text style={styles.text}>Or continue with</Text>
-          <Button
-            icon={<Google />}
-            buttonStyle={styles.circleButton}
-            onPress={() => this.register(true)}
-          />
+          <View style={{flexDirection: 'row'}}>
+            <Button
+              title="in"
+              titleStyle={styles.inButtonTitle}
+              buttonStyle={[styles.circleButton, styles.blue]}
+              onPress={() => this.register('linkedin')}
+            />
+            <Button
+              icon={<Google />}
+              buttonStyle={styles.circleButton}
+              onPress={() => this.register('google')}
+            />
+          </View>
         </View>
       </View>
     );
@@ -153,6 +164,7 @@ class Screen extends React.Component {
         regex = validation.nameRegex;
         break;
       case 'email':
+        value = value.toLowerCase();
         regex = validation.emailOrPhoneRegex;
         break;
       case 'password':
@@ -176,13 +188,18 @@ class Screen extends React.Component {
       .reduce((a, b) => a && b, this.agree);
   };
 
-  register = async (fromGoogle = false) => {
-    if (fromGoogle) {
-      await this.props.authService.loginWithGoogle();
-    } else {
-      if (!await this.props.authService.register(this.form)) {
-        return;
-      }
+  register = async (social = '') => {
+    switch (social) {
+      case 'google':
+        await this.props.authService.loginWithGoogle();
+        break;
+      case 'linkedin':
+        await this.props.authService.loginWithLinkedIn();
+        break;
+      default:
+        if (!await this.props.authService.register(this.form)) {
+          return;
+        }
     }
     this.props.navigation.navigate('AuthLoading');
   };
@@ -251,6 +268,13 @@ const styles = StyleSheet.create({
     margin: 8,
     backgroundColor: 'white',
   },
+  blue: {
+    backgroundColor: 'rgb(0,89,136)',
+  },
+  inButtonTitle: {
+    fontSize: 28,
+    fontWeight: 'bold'
+  }
 });
 
 export default Screen;
